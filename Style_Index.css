@@ -180,12 +180,16 @@ body{
     }
 
     .mytab th{
-        font-size: medium;
-        
+        font-size: medium;   
     }
 
     .btn{
         margin: 1.5rem 2rem;
+    }
+    
+    .h44{
+        font-size: smaller;
+        font-weight: 300;
     }
     
 }
