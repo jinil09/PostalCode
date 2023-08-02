@@ -22,10 +22,10 @@ const ShowResult= async (form)=>{
     if(mydata[0]["Status"] == "Success")
     {
 
-        {var h4=document.createElement("h4")
+        {var h4=document.createElement("p")
         info.append(h4)
         h4.setAttribute("style","color:white")
-        var h4data=document.createTextNode(count+") The No of PostOffice in this("+pincode+") Pincode : "+mydata[0]["PostOffice"].length)
+        var h4data=document.createTextNode(count+") The No of PostOffice under this("+pincode+") Pincode : "+mydata[0]["PostOffice"].length)
         h4.append(h4data);
         count++;}
         
@@ -108,6 +108,7 @@ const ShowResult= async (form)=>{
 
         var h4=document.createElement("h4")
         info.append(h4)
+        alert("Please Enter Valid Pincode");
         var h4data=document.createTextNode(count+") Please Enter Valid Postel code")
         h4.append(h4data);
         h4.setAttribute("style","color:red")
